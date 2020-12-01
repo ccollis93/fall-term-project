@@ -1,0 +1,12 @@
+C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsClasses\bin\Debug\netcoreapp3.1\bitsClasses.deps.json
+C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsClasses\bin\Debug\netcoreapp3.1\bitsClasses.runtimeconfig.json
+C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsClasses\bin\Debug\netcoreapp3.1\bitsClasses.runtimeconfig.dev.json
+C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsClasses\bin\Debug\netcoreapp3.1\bitsClasses.dll
+C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsClasses\bin\Debug\netcoreapp3.1\bitsClasses.pdb
+C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsClasses\obj\Debug\netcoreapp3.1\bitsClasses.csprojAssemblyReference.cache
+C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsClasses\obj\Debug\netcoreapp3.1\bitsClasses.AssemblyInfoInputs.cache
+C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsClasses\obj\Debug\netcoreapp3.1\bitsClasses.AssemblyInfo.cs
+C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsClasses\obj\Debug\netcoreapp3.1\bitsClasses.csproj.CoreCompileInputs.cache
+C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsClasses\obj\Debug\netcoreapp3.1\bitsClasses.dll
+C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsClasses\obj\Debug\netcoreapp3.1\bitsClasses.pdb
+C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsClasses\obj\Debug\netcoreapp3.1\bitsClasses.genruntimeconfig.cache
