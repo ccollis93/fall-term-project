@@ -10,3 +10,4 @@ C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-pr
 C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsClasses\obj\Debug\netcoreapp3.1\bitsEFClasses.pdb
 C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsClasses\obj\Debug\netcoreapp3.1\bitsEFClasses.genruntimeconfig.cache
 C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsClasses\obj\Debug\netcoreapp3.1\bitsEFClasses.csprojAssemblyReference.cache
+C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsClasses\bin\Debug\netcoreapp3.1\mySqlSettings.json
