@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bitsEFClasses", "bitsEFClasses.csproj", "{52544AE5-1AE7-46F9-A5C9-6B485F500ACF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bitsNUnitTests", "..\bitsNUnitTests\bitsNUnitTests.csproj", "{A8ACE215-06A4-4E47-BE86-86E7D88D5E05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bitsNUnitTests", "..\bitsNUnitTests\bitsNUnitTests.csproj", "{A8ACE215-06A4-4E47-BE86-86E7D88D5E05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bitsRESTAPI", "..\bitsRESTAPI\bitsRESTAPI.csproj", "{B33A0B6D-E64A-4DE0-8AF4-3152F99D2542}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A8ACE215-06A4-4E47-BE86-86E7D88D5E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8ACE215-06A4-4E47-BE86-86E7D88D5E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8ACE215-06A4-4E47-BE86-86E7D88D5E05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B33A0B6D-E64A-4DE0-8AF4-3152F99D2542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B33A0B6D-E64A-4DE0-8AF4-3152F99D2542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B33A0B6D-E64A-4DE0-8AF4-3152F99D2542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B33A0B6D-E64A-4DE0-8AF4-3152F99D2542}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
