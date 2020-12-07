@@ -1,14 +1,114 @@
 ﻿<Page
-    x:Class="bitsHomepageApp.SupplierPage"
+    x:Class="bitsHomePageUWP.SupplierPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:bitsHomepageApp"
+    xmlns:local="using:bitsHomePageUWP"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Loaded="Page_Loaded">
 
     <Grid>
+        <Image Source="Assets/christmasBackground.jpg"/>
+        <Rectangle HorizontalAlignment="Center" Height="228"  Fill="DarkOliveGreen" VerticalAlignment="Top" Width="1500"/>
+        <Rectangle HorizontalAlignment="Center" Height="106" Margin="0,894,0,0"  Fill="DarkOliveGreen" VerticalAlignment="Top" Width="1500"/>
+        <Image Source="Assets/transparentLogo.png" Margin="39,10,1182,774"/>
+        <Rectangle HorizontalAlignment="Left" Height="595" Margin="19,260,0,0" Stroke="Black" Fill="Beige" VerticalAlignment="Top" Width="1391"/>
+
+
+
+
+
+
+        <StackPanel Grid.Column="0" Orientation="Vertical" Padding="10" Margin="-43,290,855,236">
+            <TextBlock Padding="6" FontSize="32" Width="418"><Run Text="Supplier Information"/></TextBlock>
+            
+            
+            <StackPanel Orientation="Horizontal" Margin="6" Padding="6" >
+                <TextBlock TextAlignment="Right" Width="240" FontSize="24" Padding="6"><Run Text="Find a Supplier:"/></TextBlock>
+                <TextBox Width="200" FontSize="20" x:Name="supplierrIdTxt" PlaceholderText="supplierId"/>
+                <Button Width="200" FontSize="20" Margin="6" Padding="6" x:Name="findBtn" Click="findBtn_Click" Content="Find"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="6" Padding="6">
+                <TextBlock TextAlignment="Right" Width="240" FontSize="24" Padding="6"><Run Text="Supplier ID:"/></TextBlock>
+                <TextBox Width="406" FontSize="20" x:Name="supplierIdTxt"
+                         Text="{x:Bind Path=Selected.SupplierId}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="6" Padding="6">
+                <TextBlock TextAlignment="Right" Width="240" FontSize="24" Padding="6"><Run Text="Name:"/></TextBlock>
+                <TextBox Width="406" FontSize="20" x:Name="supplierNameTxt"
+                         Text="{x:Bind Path=Selected.Name}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="6" Padding="6">
+                <TextBlock TextAlignment="Right" Width="240" FontSize="24" Padding="6"><Run Text="Phone:"/></TextBlock>
+                <TextBox Width="406" FontSize="20" x:Name="supplierPhoneTxt"
+                         Text="{x:Bind Path=Selected.Phone}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="6" Padding="6">
+                <TextBlock TextAlignment="Right" Width="240" FontSize="24" Padding="6"><Run Text="EMail:"/></TextBlock>
+                <TextBox Width="406" FontSize="20" x:Name="supplierEmailTxt"
+                         Text="{x:Bind Path=Selected.Email}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="6" Padding="6">
+                <TextBlock TextAlignment="Right" Width="240" FontSize="24" Padding="6"><Run Text="Website:"/></TextBlock>
+                <TextBox Width="406" FontSize="20" x:Name="supplierWebsiteTxt"
+                         Text="{x:Bind Path=Selected.Website}"/>
+            </StackPanel>
+
+           
+        </StackPanel>
+
+        <StackPanel Grid.Column="0" Orientation="Vertical" Padding="10" Margin="605,345,178,165">
+            <StackPanel Orientation="Horizontal" Padding="6">
+                <TextBlock TextAlignment="Right" Width="240" FontSize="24" Padding="6"><Run Text="Contact First Name:"/></TextBlock>
+                <TextBox Width="406" FontSize="20" x:Name="contactFirstNameTxt"
+                         Text="{x:Bind Path=Selected.ContactFirstName}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="6" Padding="6">
+                <TextBlock TextAlignment="Right" Width="240" FontSize="24" Padding="6">Contact Last Name:</TextBlock>
+                <TextBox Width="406" FontSize="20" Name="contactLastNameTxt"
+                         Text="{x:Bind Selected.ContactLastName}"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="6" Padding="6">
+                <TextBlock TextAlignment="Right" Width="240" FontSize="24" Padding="6">Contact Phone:</TextBlock>
+                <TextBox Width="406" FontSize="20" Name="contactPhoneTxt"
+                         Text="{x:Bind Selected.ContactPhone}"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="6" Padding="6">
+                <TextBlock TextAlignment="Right" Width="240" FontSize="24" Padding="6">Contact Email:</TextBlock>
+                <TextBox Width="406" FontSize="20" Name="contactEmailTxt"
+                         Text="{x:Bind Selected.ContactEmail}"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="6" Padding="6">
+                <TextBlock TextAlignment="Right" Width="240" FontSize="24" Padding="6">Note:</TextBlock>
+                <TextBox Width="406" FontSize="20" Name="supplierNoteTxt"
+                         Text="{x:Bind Selected.Note}"></TextBox>
+            </StackPanel>
+        </StackPanel>
+
+        
+
+
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="10" Background="{ThemeResource AppBarBackgroundThemeBrush}" Margin="1065,680,0,0">
+            <UIElement.RenderTransform>
+                <MatrixTransform/>
+            </UIElement.RenderTransform>
+            <Button Width="200" FontSize="20" Margin="6" Padding="6" Name="deleteBtn" Click="deleteBtn_Click">Delete</Button>
+            <Button Width="200" FontSize="20" Margin="6" Padding="6" Name="editBtn" Click="editBtn_Click">Edit</Button>
+            <Button Width="200" FontSize="20" Margin="6" Padding="6" Name="addBtn" Click="addBtn_Click">Add</Button>
+            <Button Width="200" FontSize="20" Margin="6" Padding="6" Name="saveBtn" Click="saveBtn_Click">Save</Button>
+            <Button Width="200" FontSize="20" Margin="6" Padding="6" Name="cancelBtn" Click="cancelBtn_Click">Cancel</Button>
+        </StackPanel>
+
+        <Image Source="assets/darkgry_skull.png" Margin="12,909,1374,15"/>
+        <TextBlock Text="(c) 2020 Designed by Zaibatsu Software" TextWrapping="Wrap" Margin="112,966,1086,7"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="605,1125,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
+
+
 </Page>

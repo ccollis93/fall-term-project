@@ -5,7 +5,7 @@
     xmlns:local="using:bitsHomePageUWP"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    d:DataContext="{d:DesignInstance local:MainPage}"
+   
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -27,10 +27,7 @@
             <TextBlock HorizontalAlignment="Left" Margin="673,371,0,0" Text="LOGIN" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="40"/>
         </Grid>
 
-        <Grid Visibility="{Binding isNotVisible}">
         
-
-        </Grid>
         
         
         <Image Source="assets/darkgry_skull.png" Margin="12,909,1374,15"/>

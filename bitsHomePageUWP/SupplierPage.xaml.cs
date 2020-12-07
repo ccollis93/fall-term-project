@@ -30,6 +30,7 @@ namespace bitsHomePageUWP
     {
         private Supplier selected = null;
         private HttpDataService service;
+        
 
         public Supplier Selected
         {
@@ -39,9 +40,15 @@ namespace bitsHomePageUWP
 
         public ObservableCollection<Supplier> Suppliers { get; private set; } = new ObservableCollection<Supplier>();
 
+        public SupplierPage()
+        {
+            this.InitializeComponent();
+        }
+
 
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
+          
             service = new HttpDataService("http://localhost:5000/api");
             List<Supplier> suppliers = await service.GetAsync<List<Supplier>>("supplier");
             foreach (Supplier s in suppliers)
@@ -57,7 +64,7 @@ namespace bitsHomePageUWP
             try
             {
                 Selected = await service.GetAsync<Supplier>("supplier\\" + supplierId, null, true);
-                DisplaySupplierDetail();
+                DisplaySupplierDetails();
                 EnableButtons("found");
             }
             catch
@@ -69,7 +76,7 @@ namespace bitsHomePageUWP
             }
         }
 
-        private async void delete_Click(object sender, RoutedEventArgs e)
+        private async void deleteBtn_Click(object sender, RoutedEventArgs e)
         {
             if (Selected != null)
             {
@@ -102,8 +109,8 @@ namespace bitsHomePageUWP
         private void addBtn_Click(object sender, RoutedEventArgs e)
         {
             Selected = null;
-            this.supplierId.Txt = "";
-            this.supplierId.Txt.IsEnabled = false;
+            this.supplierIdTxt = null;
+            this.supplierIdTxt.IsEnabled = false;
             ClearSupplierDetails();
             EnableFields(true);
             EnableButtons("adding");
@@ -180,7 +187,7 @@ namespace bitsHomePageUWP
         {
             if(Selected == null)
             {
-                this.supplierIdTxt.IsEnables = true;
+                this.supplierIdTxt.IsEnabled = true;
                 ClearSupplierDetails();
                 EnableFields(false);
                 EnableButtons("pageLoad");
@@ -197,12 +204,12 @@ namespace bitsHomePageUWP
         {
             this.supplierNameTxt.Text = Selected.Name;
             this.supplierPhoneTxt.Text = Selected.Phone;
-            this.supplerEmailTxt.Text = Selected.Email;
+            this.supplierEmailTxt.Text = Selected.Email;
             this.supplierWebsiteTxt.Text = Selected.Website;
             this.contactFirstNameTxt.Text = Selected.ContactFirstName;
             this.contactLastNameTxt.Text = Selected.ContactLastName;
             this.contactPhoneTxt.Text = Selected.ContactPhone;
-            this.contactEemailTxt.Text = Selected.ContactEmail;
+            this.contactEmailTxt.Text = Selected.ContactEmail;
             this.supplierNoteTxt.Text = Selected.Note;
             EnableFields(false);
         }
@@ -211,12 +218,12 @@ namespace bitsHomePageUWP
         {
             this.supplierNameTxt.Text = "";
             this.supplierPhoneTxt.Text = "";
-            this.supplerEmailTxt.Text = "";
+            this.supplierEmailTxt.Text = "";
             this.supplierWebsiteTxt.Text = "";
             this.contactFirstNameTxt.Text = "";
             this.contactLastNameTxt.Text = "";
             this.contactPhoneTxt.Text = "";
-            this.contactEemailTxt.Text = "";
+            this.contactEmailTxt.Text = "";
             this.supplierNoteTxt.Text = "";
             EnableFields(false);
         }
@@ -238,12 +245,12 @@ namespace bitsHomePageUWP
         {
             this.supplierNameTxt.IsEnabled = enabled;
             this.supplierPhoneTxt.IsEnabled = enabled;
-            this.supplerEmailTxt.IsEnabled = enabled;
+            this.supplierEmailTxt.IsEnabled = enabled;
             this.supplierWebsiteTxt.IsEnabled = enabled;
             this.contactFirstNameTxt.IsEnabled = enabled;
             this.contactLastNameTxt.IsEnabled = enabled;
             this.contactPhoneTxt.IsEnabled = enabled;
-            this.contactEemailTxt.IsEnabled = enabled;
+            this.contactEmailTxt.IsEnabled = enabled;
             this.supplierNoteTxt.IsEnabled = enabled;
         }
 

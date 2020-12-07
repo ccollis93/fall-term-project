@@ -132,7 +132,6 @@
     <Compile Include="Models\Barrel.cs" />
     <Compile Include="Models\Batch.cs" />
     <Compile Include="Models\BatchContainer.cs" />
-    <Compile Include="Models\bitsContext.cs" />
     <Compile Include="Models\BrewContainer.cs" />
     <Compile Include="Models\ContainerSize.cs" />
     <Compile Include="Models\ContainerStatus.cs" />
@@ -204,9 +203,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.10</Version>
-    </PackageReference>
-    <PackageReference Include="MySql.Data">
-      <Version>8.0.21</Version>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
       <Version>12.0.3</Version>

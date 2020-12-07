@@ -1,5 +1,6 @@
 WinMetadata\Windows.winmd
 Assets\christmasBackground.jpg
+Assets\darkgry_skull.png
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -9,6 +10,7 @@ Assets\StoreLogo.png
 Assets\transparentLogo.png
 Assets\Wide310x150Logo.scale-200.png
 App.xbf
-bitsHomepageApp.xr.xml
+bitsHomePageUWP.xr.xml
 MainPage.xbf
+SupplierPage.xbf
 Properties\Default.rd.xml

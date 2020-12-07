@@ -30,15 +30,10 @@ namespace bitsHomePageUWP
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private Supplier selected = null;
+       
         private HttpDataService service;
 
-        public Supplier Selected
-        {
-            get { return selected; }
-            set { selected = value; }
-        }
-        
+      
         public MainPage()
         {
             this.InitializeComponent();
@@ -52,18 +47,6 @@ namespace bitsHomePageUWP
 
         public bool isLoggedIn = false;
 
-        /* -----With some modifications, this code should let me get the supplier table from the bits database to display on the suppliers list page after logging in
-        string M_str_sqlcon = "server=localhost;user id=root;password=YOURPASSWORDHERE;database=bits";
-        MySqlConnection mysqlcon = new MySqlConnection(M_str_sqlcon);
-        MySqlCommand mysqlcom = new MySqlCommand("select * from table1", mysqlcon);
-        mysqlcon.Open();
-        MySqlDataReader mysqlread = mysqlcom.ExecuteReader(CommandBehavior.CloseConnection);
-        while (mysqlread.Read())
-                 {
-                Debug.WriteLine(mysqlread.GetString(0)+":"+mysqlread.GetString(1));
-                     }
-                mysqlcon.Close();
-        */
 
        private void Button_Click(object sender, RoutedEventArgs e)
         {

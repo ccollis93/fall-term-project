@@ -13,17 +13,17 @@ namespace bitsHomePageUWP
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.18362.1")]
-        private global::bitsHomePageUWP.bitsHomepageApp_XamlTypeInfo.XamlMetaDataProvider __appProvider;
+        private global::bitsHomePageUWP.bitsHomePageUWP_XamlTypeInfo.XamlMetaDataProvider __appProvider;
 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.18362.1")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        private global::bitsHomePageUWP.bitsHomepageApp_XamlTypeInfo.XamlMetaDataProvider _AppProvider
+        private global::bitsHomePageUWP.bitsHomePageUWP_XamlTypeInfo.XamlMetaDataProvider _AppProvider
         {
             get
             {
                 if (__appProvider == null)
                 {
-                    __appProvider = new global::bitsHomePageUWP.bitsHomepageApp_XamlTypeInfo.XamlMetaDataProvider();
+                    __appProvider = new global::bitsHomePageUWP.bitsHomePageUWP_XamlTypeInfo.XamlMetaDataProvider();
                 }
                 return __appProvider;
             }
@@ -61,7 +61,7 @@ namespace bitsHomePageUWP
     }
 }
 
-namespace bitsHomePageUWP.bitsHomepageApp_XamlTypeInfo
+namespace bitsHomePageUWP.bitsHomePageUWP_XamlTypeInfo
 {
     /// <summary>
     /// Main class for providing metadata for the app or library
@@ -70,15 +70,15 @@ namespace bitsHomePageUWP.bitsHomepageApp_XamlTypeInfo
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class XamlMetaDataProvider : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-        private global::bitsHomePageUWP.bitsHomepageApp_XamlTypeInfo.XamlTypeInfoProvider _provider = null;
+        private global::bitsHomePageUWP.bitsHomePageUWP_XamlTypeInfo.XamlTypeInfoProvider _provider = null;
 
-        private global::bitsHomePageUWP.bitsHomepageApp_XamlTypeInfo.XamlTypeInfoProvider Provider
+        private global::bitsHomePageUWP.bitsHomePageUWP_XamlTypeInfo.XamlTypeInfoProvider Provider
         {
             get
             {
                 if (_provider == null)
                 {
-                    _provider = new global::bitsHomePageUWP.bitsHomepageApp_XamlTypeInfo.XamlTypeInfoProvider();
+                    _provider = new global::bitsHomePageUWP.bitsHomePageUWP_XamlTypeInfo.XamlTypeInfoProvider();
                 }
                 return _provider;
             }
