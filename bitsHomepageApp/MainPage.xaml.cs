@@ -15,6 +15,14 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
+using bitsEFClasses.Models;
+//using bitsHomepageUWP.Models;
+using bitsEFClasses.Services;
+using System.Collections.ObjectModel;
+using Windows.UI.Popups;
+using System.Net.Http;
+
+
 namespace bitsHomepageApp
 {
     /// <summary>
@@ -22,6 +30,15 @@ namespace bitsHomepageApp
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private Supplier selected = null;
+        private HttpDataService service;
+
+        public Supplier Selected
+        {
+            get { return selected; }
+            set { selected = value; }
+        }
+        
         public MainPage()
         {
             this.InitializeComponent();
@@ -29,7 +46,7 @@ namespace bitsHomepageApp
 
         public Visibility IsVisible => LoggedIn ? Visibility.Collapsed : Visibility.Visible;
 
-        public Visibility isVisible => !LoggedIn ? Visibility.Collapsed : Visibility.Visible;
+        public Visibility IsNotVisible => !LoggedIn ? Visibility.Collapsed : Visibility.Visible;
 
         public bool LoggedIn = false;
 
@@ -47,6 +64,16 @@ namespace bitsHomepageApp
                      }
                 mysqlcon.Close();
         */
+
+        private async void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            service = new HttpDataService("http://localhost:5000/api");
+            List<Supplier> suppliers = await service.GetAsync<List<Supplier>>("supplier");
+            foreach (Supplier s in suppliers)
+                this.Suppliers.Add(s);
+        }
+
+
     }
 }
 

@@ -172,3 +172,4 @@ C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-pr
 C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsRESTAPI\bin\Debug\netcoreapp3.1\bitsEFClasses.dll
 C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsRESTAPI\bin\Debug\netcoreapp3.1\bitsEFClasses.pdb
 C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsRESTAPI\obj\Debug\netcoreapp3.1\bitsRESTAPI.csproj.CopyComplete
+C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsRESTAPI\bin\Debug\netcoreapp3.1\MySqlConnector.dll
