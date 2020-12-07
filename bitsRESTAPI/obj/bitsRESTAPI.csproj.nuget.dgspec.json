@@ -161,6 +161,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.4, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[0.34.0, )"
             }
           },
           "imports": [
