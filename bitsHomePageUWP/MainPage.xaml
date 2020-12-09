@@ -22,7 +22,7 @@
             <Rectangle HorizontalAlignment="Left" Height="360" Margin="462,343,0,0" Fill="DarkOliveGreen" VerticalAlignment="Top" Width="538"/>
             <TextBox HorizontalAlignment="Left" Height="44" Margin="565,456,0,0" Text="User ID" TextWrapping="Wrap" VerticalAlignment="Top" Width="332"/>
             <TextBox HorizontalAlignment="Left" Height="44" Margin="565,523,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="332"/>
-            <Button Content="Submit" Height="47" Margin="636,599,0,0" VerticalAlignment="Top" Width="190"/>
+            <Button Content="Submit" Height="47" Margin="636,599,0,0" VerticalAlignment="Top" Width="190" Click="Button_Click"/>
             <Rectangle HorizontalAlignment="Left" Height="52" Margin="636,372,0,0" Stroke="Black" Fill="Beige" VerticalAlignment="Top" Width="190"/>
             <TextBlock HorizontalAlignment="Left" Margin="673,371,0,0" Text="LOGIN" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="40"/>
         </Grid>

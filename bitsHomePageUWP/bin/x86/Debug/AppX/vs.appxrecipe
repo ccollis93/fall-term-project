@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsHomePageUWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-12-07T12:16:12.797</Modified>
+      <Modified>2020-12-09T20:17:16.804</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsHomePageUWP\bin\x86\Debug\bitsHomePageUWP.exe">
       <PackagePath>entrypoint\bitsHomePageUWP.exe</PackagePath>
-      <Modified>2020-12-07T12:16:10.035</Modified>
+      <Modified>2020-12-09T20:17:16.036</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Christian\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -106,15 +106,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsHomePageUWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-12-07T12:16:09.938</Modified>
+      <Modified>2020-12-09T20:17:15.906</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsHomePageUWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-12-07T12:16:09.939</Modified>
+      <Modified>2020-12-09T20:17:15.906</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsHomePageUWP\bin\x86\Debug\SupplierPage.xbf">
       <PackagePath>SupplierPage.xbf</PackagePath>
-      <Modified>2020-12-07T12:16:09.938</Modified>
+      <Modified>2020-12-09T20:17:15.906</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -126,7 +126,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Christian\Desktop\Fall Term 2020\CS234N - Advanced C#\BITS\fall-term-project\bitsHomePageUWP\bin\x86\Debug\Core\bitsHomePageUWP.exe">
       <PackagePath>bitsHomePageUWP.exe</PackagePath>
-      <Modified>2020-12-07T12:16:11.463</Modified>
+      <Modified>2020-12-09T20:17:16.794</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
